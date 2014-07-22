@@ -4,3 +4,8 @@ Uses [[http://orgmode.org][Org-mode]] and a custom style sheet.  Every CV/Resume
 it's own environments and it's a big pain to combine them and
 customize them.  I figured, it would be easy to write my own
 style-sheet and use good old org-mode. 
+
+* DONE Maketitle.
+* DONE Add contact info on top.
+* DONE Add a rule to seperate contact info and sections.
+* TODO Add hyperlink to E-mail.
