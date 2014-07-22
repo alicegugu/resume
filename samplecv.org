@@ -11,7 +11,7 @@
 #+MACRO: phone xxx-xxx-xxx
 #+MACRO: link
 
-#+ATTR_LATEX: :environment tabularx :width \linewidth :spread t :align {l@{\extracolsep{\fill}}r}
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align l@{\extracolsep{\fill}}r
 | {{{addrln1}}} | {{{email}}} |
 | {{{addrln2}}} | {{{phone}}} |
 
