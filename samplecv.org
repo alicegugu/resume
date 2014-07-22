@@ -1,6 +1,10 @@
 #+OPTIONS: toc:nil h:4 num:nil
 #+LaTeX_HEADER: \usepackage{mycv2}
 
+#+TITLE: Your Name
+
 * Education
 
 * Work Experience
+
+* Skills
