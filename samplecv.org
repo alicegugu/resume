@@ -14,7 +14,8 @@
 #+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align l@{\extracolsep{\fill}}r
 | {{{addrln1}}} | {{{email}}} |
 | {{{addrln2}}} | {{{phone}}} |
-
+#+ATTR_LaTeX: :width \textwidth :thickness 0.8pt
+-----
 * Education
 * Work Experience
 * Skills
