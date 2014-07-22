@@ -1,10 +1,12 @@
 \ProvidesPackage{mycv2}
 
-\usepackage[margin=1.0in]{geometry}
+\usepackage[margin=0.75in]{geometry}
+
+\pagestyle{empty}
 
 %% Title
-\renewcommand*{\maketitle}{
+\renewcommand{\maketitle}{
   {
-    \raggedright{\Huge \@title}
+    \raggedright{\Huge\bfseries \@title}
   }
 }

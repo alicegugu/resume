@@ -1,10 +1,20 @@
 #+OPTIONS: toc:nil h:4 num:nil
+#+LaTeX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [10pt, a4paper]
 #+LaTeX_HEADER: \usepackage{mycv2}
 
 #+TITLE: Your Name
 
+#+MACRO: addrln1 \#1024 Empire Bldg, 350 Fifth Avenue
+#+MACRO: addrln2 New York, NY, 10118
+#+MACRO: email xxxxxx@gmail.com
+#+MACRO: phone xxx-xxx-xxx
+#+MACRO: link
+
+#+ATTR_LATEX: :environment tabularx :width \linewidth :spread t :align {l@{\extracolsep{\fill}}r}
+| {{{addrln1}}} | {{{email}}} |
+| {{{addrln2}}} | {{{phone}}} |
+
 * Education
-
 * Work Experience
-
 * Skills
