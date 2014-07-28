@@ -11,29 +11,33 @@
 #+MACRO: phone xxx-xxx-xxx
 #+MACRO: link
 
-#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align l@{\extracolsep{\fill}}r
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align X>{\raggedleft\arraybackslash}X
 | {{{addrln1}}} | {{{email}}} |
 | {{{addrln2}}} | {{{phone}}} |
 #+ATTR_LaTeX: :width \textwidth :thickness 0.8pt
 -----
 
 * Education
-#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align p{0.75in}l@{\extracolsep{\fill}}r
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align lXr
 | 2009-2012 | School X of University A | Location |
 | 2005-2009 | School Y of University B | Location |
 
 * Work Experience
-#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align p{0.75in}l@{\extracolsep{\fill}}r
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align lXr
 |     2012- | Your Position at Company A | Location |
 | 2010-2012 | Your Position at Company B | Location |
 
 * Projects
-#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align p{0.75in}l@{\extracolsep{\fill}}
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align lX
 | Date1 | Description of Project1 |
 | Date2 | Description of Project2 |
 
+* Honors
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align lXr
+| Date1 | Description of Project1 | Location |
+| Date2 | Description of Project2 | Location |
 
 * Skills
-#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align p{0.75in}l@{\extracolsep{\fill}}
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align lX
 | Programming | Your programming skills |
 | Language    | Your language skills    |
