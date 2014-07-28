@@ -9,3 +9,5 @@ style-sheet and use good old org-mode.
 * DONE Add contact info on top.
 * DONE Add a rule to seperate contact info and sections.
 * TODO Add hyperlink to E-mail.
+* DONE Add table in sections.
+* TODO Adjust the font of title, paragraph, etc.

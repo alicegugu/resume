@@ -16,6 +16,24 @@
 | {{{addrln2}}} | {{{phone}}} |
 #+ATTR_LaTeX: :width \textwidth :thickness 0.8pt
 -----
+
 * Education
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align p{0.75in}l@{\extracolsep{\fill}}r
+| 2009-2012 | School X of University A | Location |
+| 2005-2009 | School Y of University B | Location |
+
 * Work Experience
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align p{0.75in}l@{\extracolsep{\fill}}r
+|     2012- | Your Position at Company A | Location |
+| 2010-2012 | Your Position at Company B | Location |
+
+* Projects
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align p{0.75in}l@{\extracolsep{\fill}}
+| Date1 | Description of Project1 |
+| Date2 | Description of Project2 |
+
+
 * Skills
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align p{0.75in}l@{\extracolsep{\fill}}
+| Programming | Your programming skills |
+| Language    | Your language skills    |
