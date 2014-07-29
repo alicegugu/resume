@@ -1,43 +1,59 @@
 #+OPTIONS: toc:nil h:4 num:nil
 #+LaTeX_CLASS: article
 #+LATEX_CLASS_OPTIONS: [10pt, a4paper]
-#+LaTeX_HEADER: \usepackage{mycv2}
+#+LaTeX_HEADER: \usepackage[margin=0.75in]{geometry}
+#+LaTeX_HEADER: \usepackage{tabularx}
+#+LaTeX_HEADER: \usepackage{sectsty}
+#+LaTeX_HEADER: \usepackage{titlesec}
 
-#+TITLE: Your Name
+#+BEGIN_LATEX
+\pagestyle{empty}
+\setlength{\parindent}{0cm}
 
+\sectionfont{
+  \huge\bfseries
+}
+
+\subsectionfont{
+  \sectionrule{0pt}{0pt}{-5pt}{0.8pt}
+}
+#+END_LATEX
+
+#+TITLE:
+
+#+MACRO: name Your Name
 #+MACRO: addrln1 \#1024 Empire Bldg, 350 Fifth Avenue
 #+MACRO: addrln2 New York, NY, 10118
 #+MACRO: email xxxxxx@gmail.com
 #+MACRO: phone xxx-xxx-xxx
 #+MACRO: link
 
+* {{{name}}}
 #+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align X>{\raggedleft\arraybackslash}X
 | {{{addrln1}}} | {{{email}}} |
 | {{{addrln2}}} | {{{phone}}} |
-#+ATTR_LaTeX: :width \textwidth :thickness 0.8pt
------
 
-* Education
+** Education
 #+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align lXr
 | 2009-2012 | School X of University A | Location |
 | 2005-2009 | School Y of University B | Location |
 
-* Work Experience
+** Work Experience
 #+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align lXr
 |     2012- | Your Position at Company A | Location |
 | 2010-2012 | Your Position at Company B | Location |
 
-* Projects
+** Projects
 #+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align lX
 | Date1 | Description of Project1 |
 | Date2 | Description of Project2 |
 
-* Honors
+** Honors
 #+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align lXr
 | Date1 | Description of Project1 | Location |
 | Date2 | Description of Project2 | Location |
 
-* Skills
+** Skills
 #+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align lX
 | Programming | Your programming skills |
 | Language    | Your language skills    |
