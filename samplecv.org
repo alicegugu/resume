@@ -1,10 +1,9 @@
 #+OPTIONS: toc:nil h:4 num:nil
 #+LaTeX_CLASS: article
 #+LATEX_CLASS_OPTIONS: [10pt, a4paper]
-#+LaTeX_HEADER: \usepackage[margin=0.75in]{geometry}
+#+LaTeX_HEADER: \usepackage[margin=0.6in]{geometry}
 #+LaTeX_HEADER: \usepackage{tabularx}
 #+LaTeX_HEADER: \usepackage{sectsty}
-#+LaTeX_HEADER: \usepackage{titlesec}
 
 #+BEGIN_LATEX
 \pagestyle{empty}
