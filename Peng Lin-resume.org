@@ -1,0 +1,126 @@
+#+STARTUP: showall
+#+OPTIONS: toc:nil h:4 num:nil
+#+LaTeX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [10pt, a4paper]
+#+LaTeX_HEADER: \usepackage[margin=0.75in]{geometry}
+#+LaTeX_HEADER: \usepackage{tabularx}
+#+LaTeX_HEADER: \usepackage{sectsty}
+#+LaTeX_HEADER: \usepackage{color}
+#+LaTeX_HEADER: \definecolor{linkcolour}{rgb}{0,0.2,0.6}
+#+LaTeX_HEADER: \hypersetup{colorlinks,breaklinks, urlcolor=linkcolour,linkcolor=linkcolour}
+
+#+BEGIN_LATEX
+\pagestyle{empty}
+\setlength{\parindent}{0cm}
+
+\sectionfont{
+  \huge\bfseries
+}
+
+\subsectionfont{
+  \sectionrule{0pt}{0pt}{-5pt}{0.8pt}
+}
+#+END_LATEX
+
+#+TITLE:
+
+#+MACRO: name Peng Lin
+#+MACRO: addrln1 Building No. 3, 399 Keyuan Rd
+#+MACRO: addrln2 Pudong, Shanghai, 201203, China
+#+MACRO: email [[mailto:penglin03@gmail.com][penglin03@gmail.com]]
+#+MACRO: phone +86 189 1852 2776
+#+MACRO: link penglin03.github.io
+
+* {{{name}}}
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align Xrl
+| {{{addrln1}}} | E-mail:   | [[mailto:penglin03@gmail.com][penglin03@gmail.com]]                      |
+| {{{addrln2}}} | Phone:    | +86 189 1852 2776                        |
+|               | Homepage: | [[https://sites.google.com/site/penglin03/]] |
+# |               | Homepage: | [[https://sites.google.com/site/penglin03/][penglin03 Google site]]            |
+
+** Education
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align lXr
+| 2009.9-2012.3 | *Shanghai Jiao Tong University*                                                                                                         | *SJTU* |
+|               | - /Institute of Image Processing & Pattern Recognition/                                                                                 |        |
+|               | Degree: Master of Engineering in Control Theory & Control Engineering                                                                   |        |
+|               | Research fields: Computer Vision & Machine Learning                                                                                     |        |
+|               | Advisor: @@latex: {\href{http://automation.sjtu.edu.cn/en/ShowPeople.aspx?info_id=406&info_lb=326&flag=224}{Yuming Zhao}}@@ & Fuqiao Hu |        |
+|               | Thesis: Body Part Recognition Based on Depth Images by Learning                                                                         |        |
+|               | Score (GPA): Overall: 3.3/4.3, Major: 3.5/4.3                                                                                           |        |
+
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align lXr
+| 2005.9-2009.6 | *Shanghai Jiao Tong University*                                                                                                | *SJTU* |
+|               | - /School of Electronic, Information and Electrical Engineering/ (@@latex:{\href{http://english.seiee.sjtu.edu.cn/}{SEIEE}}@@) |        |
+|               | Degree: Bachelor of Engineering in Automation                                                                                  |        |
+|               | Thesis: The Analysis and Design of Transfer Function in the Three-Dimensional Volume Rendering                                 |        |
+|               | Score (GPA): Overall: 3.4/4.3, Major: 3.5/4.3                                                                                  |        |
+
+** Work Experience
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align lXr
+| 2012.4-present | *Software Engineer at Marvell Technology Group Ltd.*               | Shanghai, China |
+|                | Focus: Image Processing & Camera Calibration for mobile camera     |                 |
+| 2011.5-2011.11 | *Software Intern at Intel Corporation Ltd.*                        | Shanghai, China |
+|                | Focus: System Administrator (Linux & Windows servers on Xen)       |                 |
+| 2010.7-2010.10 | *Software Intern at Omron Corporation Ltd.*                        | Shanghai, China |
+|                | Focus: Designer for Omron's exhibition at World Expo 2010 Shanghai |                 |
+
+
+** Publications
+   + *Peng Lin*, Chao Zhang, Zhuliang Li, Yuming Zhao, Human Body Part
+     Recognition Based on Depth Image Learning[J], Computer Engineering, Vol.38
+     (16), pp.185-188, 2012, DOI: 10.3969/j.issn.1000-3428.2012.16.048. (In
+     Chinese) [[[https://drive.google.com/viewerng/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxwZW5nbGluMDN8Z3g6MmZhYzU4NjM1NDlkMjg1Mw][PDF]]]
+   + Ling Cai, \textbf{Peng Lin}, Yuming Zhao, Chenghua Wang, Texture Image
+     Segmentation by Active Bayesian Contour, International Conference on
+     System Design and Data Processing (ICSDDP), Taiyuan, Shanxi, pp.357-360,
+     2011.2. [[[https://drive.google.com/viewerng/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxwZW5nbGluMDN8Z3g6NzYwYzEzZTViNGRmY2NjYg][PDF]]]
+
+
+** Research & Projects
+#+ATTR_LaTeX: :environment longtabu :width \linewidth :spread t :align lX
+| 2011.03-2012.03 | *Human body part recognition*: /Master's project at/ SJTU. The motivation of this project was to do fast segmentation and human body classification by random forest. I investigated and implemented a human body part recognition algorithm, by exploiting the techniques of depth imaging and ensemble learning. Compared with other geometry based methods, the algorithm used less locality information but gained a real time classification. (Advisor: Yuming Zhao)                                                                                                                                                   |
+| 2014.04-present | *Color non-uniformity correction*: /Current project/. The Color Non-Uniformity (Shading) Correction is an intractable problem in mobile camera. I am researching and designing a vectorization based method, which compresses features from massive white charts and searches the best fitting curve to minimize entropy. To embedded systems, I am building up a minimal matrix library with numerical stability and accuracy. Sample code: @@latex:{\href{https://github.com/penglin03/Numic}{Numic}}@@, (@@latex:{\href{https://jhupbooks.press.jhu.edu/content/matrix-computations-0}{ref: Matrix Computations 4th}}@@) |
+| 2013.07-2014.03 | *Camera calibration & tuning*: I tuned a hundred of parameters for the algorithms to reach best image quality. I was researching @@latex:{\href{http://www.amazon.com/Introduction-Color-Imaging-Science-Hsien-Che/dp/0521103134}{Color Science}}@@ and building up standard workflows of tests. The tests could attribute to the algorithms, which caused the defect, like whether sharpening or de-noise caused texture loss.                                                                                                                                                                                                                                                                             |
+| 2012.10-2013.06 | *Algorithms on image processor*: This was a prospective study aimed to test the Image Processor's parallel capability in complex algorithms. I implemented parallel algorithms in Python, which included format conversion, image filtering, feature extraction and texture processing.                                                                                                                                                                                                                                                                                                                                     |
+| 2012.07-2012.09 | *Panorama optimization*: The hotspot was in mosaic and pyramid blending. I searched and employed the linear interpolation to replace default non-linear functions, combined with LUT and fixed point computing. On 1GHz CPUs, the time cost was reduced from 20s to 10s per frame.                                                                                                                                                                                                                                                                                                                                          |
+
+** Selected Courses
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align p{0.6in}X
+| Master   | Pattern Recognition (A), Artificial Neural Network (A), Principle and System of Intelligence (A-)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Bachelor | Signals and Systems (A-), Mathematical Analysis II (A-), Discrete Mathematics (A), Physics I (A-)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Online   | @@latex:{\href{https://www.coursera.org/course/ml}{Machine Learning}}@@, Coursera 2014, (@@latex:{\href{https://drive.google.com/viewerng/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxwZW5nbGluMDN8Z3g6MmNkZTRiNWZkNmQ5MzRm}{record}}@@); @@latex:{\href{https://www.coursera.org/course/compphoto}{Computational Photography}}@@, Coursera 2013, (@@latex:{\href{https://drive.google.com/viewerng/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxwZW5nbGluMDN8Z3g6OTM5OTQ4OWFjNTI4MjJj}{record}}@@); @@latex:{\href{http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/}{SICP}}@@, MIT OCW 2013-present |
+
+** Honors & Awards
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align lXr
+| 2011-2012 | Graduate Fellowship                                                           | SJTU                                                                                                        |
+| 2008-2009 | National Encouragement Scholarship                                            | @@latex:{\href{http://www.moe.edu.cn/publicfiles/business/htmlfiles/moe/moe_2792/index.html}{MoE, China}}@@ |
+| 2007-2008 | Scholarship of Rockwell                                                       | Rockwell                                                                                                    |
+|           | - rewarding 3/108 students' major GPA in junior year                          |                                                                                                             |
+| 2006-2007 | Merit Student of the Year                                                     | SJTU                                                                                                        |
+|           | - 1 each class (1/29), for the overall performance of the year                |                                                                                                             |
+| 2006-2007 | Academic Excellence Scholarship, Third Class                                  | SJTU                                                                                                        |
+| 2003-2004 | First Prize in National Mathematical Olympiad Competition                     | @@latex:{\href{http://www.cms.org.cn/cms-e/index.html}{CMS, China}}@@                                       |
+|           | - one of top 30 high school students at all grade levels in my province       |                                                                                                             |
+|           | - offered admission to SJTU waived of National Matriculation Examination 2005 |                                                                                                             |
+
+# | 2010-2011 | Thank You Letter, by Omron Chairman of the Board                                                                                                                        | Omron    |
+# |           | - for designing Omron's exhibition in Shanghai Expo 2010, that was a competition game to record best smiles of people based on Omron's smile detection                  |          |
+
+
+** Tests
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align p{0.8in}X
+| 2014.07.06 | TOEFL 94                |
+| 2014.11.01 | GRE   V150, Q170, AW3.0 |
+
+** Teaching Experience
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align lX
+| 2009.09-2011.06 | Undergraduate Class Teacher. I had served and managed a class of 27 students for two years.                                                                                              |
+| 2010.09-2011.01 | Teaching Assistantship. Course AU311: Introductory Pattern Recognition, School of Electronic, Information and Electrical Engineering (SEIEE), Shanghai Jiao Tong University, Fall, 2010. |
+
+** Technical Skills
+#+ATTR_LaTeX: :environment tabularx :width \linewidth :spread t :align p{1in}X
+| Programming languages      | C, Python, Octave/Matlab, C++, Lisp, Java, C# with practical experience.                                                                                                                                  |
+|                            |                                                                                                                                                                                                           |
+| Favorite Tools & Libraries | Linux, Emacs (Org mode), Vi, GCC, Bash, Git, Html, CSS, JSON, Xml (libxml2), OpenCV, OpenGL (freeglut), LaTeX,                                                                                            |
+|                            |                                                                                                                                                                                                           |
+| Specialized Knowledge      | Fundamental Machine Learning & Image Processing Algorithms, Random Forest, Neural Network, PCA, Depth Imaging, Image Segmentation, Object Tracking, Image Quality, Color Imaging Science, Embedded System |
